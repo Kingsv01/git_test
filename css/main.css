@@ -1,0 +1,68 @@
+body {
+  margin: 0 auto;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at bottom, #2d2d2d, #d2cfcf);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.button-container {
+  width: 860px;
+  padding: 15px 42px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.content-section {
+  width: 50vw;
+  height: 70vh;
+  margin: 0 auto;
+  background-image: url('../img/a-a.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 10px solid rgba(135, 122, 122, 0.451);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.lava {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, #ff4500, transparent);
+}
+
+.fire-rain {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.fire-drop {
+  position: absolute;
+  bottom: 100%;
+  width: 3px;
+  height: 80px;
+  background: linear-gradient(to bottom, #ff4500, #ff8c00, transparent);
+  animation: fall 1s linear infinite;
+}
+
+@keyframes fall {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(100vh);}
+}
+
+.fire-drop:nth-child(odd) {
+  animation-duration: 1.5s;
+}
+
+.fire-drop:nth-child(even) {
+  animation-duration: 2s;
+}
