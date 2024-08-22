@@ -1,0 +1,18 @@
+:root{
+    --main-color: rgb(255, 0, 195);
+    --bg-color: #ccc;
+    --font-size: 24px;
+    --border: 2px solid green;
+}
+
+.header{
+    background-color: var(--bg-color);
+    font-size: var(--font-size);
+    color: var(--main-color);
+}
+
+.text{
+    border: var(--border);
+    --main-color: blue;
+    color: var(--main-color);
+}

@@ -1,0 +1,36 @@
+p{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header{
+    max-width: 200px;
+    margin: 0 auto;
+}
+.link__a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Основний колір фону */
+    color: white; /* Колір тексту */
+    text-decoration: none; /* Прибрати підкреслення */
+    border-radius: 5px; /* Закруглені кути */
+    text-align: center; /* Вирівнювання тексту по центру */
+    font-weight: bold; /* Жирний текст */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Плавні переходи */
+}
+
+.link__a:hover {
+    background-color: #0056b3; /* Зміна кольору фону при наведенні */
+    transform: scale(1.05); /* Невелике збільшення при наведенні */
+}
+
+.link__a:active {
+    background-color: #004494; /* Зміна кольору фону при натисканні */
+    transform: scale(0.98); /* Легке зменшення при натисканні */
+}
+
+.link__a:focus {
+    outline: none; /* Вимкнути стандартну рамку при фокусі */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Тінь навколо кнопки при фокусі */
+}
+
