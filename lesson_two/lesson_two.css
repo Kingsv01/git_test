@@ -16,3 +16,8 @@
     --main-color: blue;
     color: var(--main-color);
 }
+
+.link{
+    --color-link: black;
+    color: var(--color-link);
+}
